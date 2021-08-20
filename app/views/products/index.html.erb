@@ -1,0 +1,15 @@
+<table>
+	<% @products.each do |product|%>
+		<tr>
+			<td>
+  				<%= product.name %>
+  			</td>
+  			<td>
+  				<%= product.price %>
+  			</td>
+  			<td>
+  				<%=button_to "Add to cart", :action => 'create', :controller => 'line_items' , :product_id => product.id%>
+  			</td>
+  		</tr>
+ 	<%end%>
+</table>

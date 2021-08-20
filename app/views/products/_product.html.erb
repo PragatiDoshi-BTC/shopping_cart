@@ -1,0 +1,9 @@
+<table>
+	<tr>
+		<td>
+  <%= product.name %></td>
+  <td>
+  <%= product.price %></td>
+  
+ <td><%=button_to "Add to cart", line_items_path(:product_id => product.id)%></td><tr>
+ 	<table>
